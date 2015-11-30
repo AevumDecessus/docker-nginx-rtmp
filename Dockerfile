@@ -26,4 +26,7 @@ VOLUME ["/recordings"]
 
 EXPOSE 1935
 
+RUN ln -s /dev/stdout /logs/access.log
+RUN ln -s /dev/stderr /logs/error.log
+
 CMD ["nginx", "-g", "daemon off;"]
