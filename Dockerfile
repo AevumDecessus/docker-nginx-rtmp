@@ -1,4 +1,5 @@
 FROM phusion/baseimage
+MAINTAINER Aevum Decessus <aevum@decess.us>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV PATH=$PATH:/usr/local/nginx/sbin
